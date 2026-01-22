@@ -12,7 +12,7 @@
 	$log_enabled = true;
 
 	$mail_host="smtp.gmail.com";
-	$mail_user="pocok1007@gmail.com";
+	$mail_user="zoltangevesi81@gmail.com";
 	$mail_psw="fgvg fdyo oevv ushl";
 
 	$connectionstring = "mysql:host=".$database_host.";dbname=".$datebase_db.";charset=utf8mb4";
