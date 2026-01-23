@@ -1,7 +1,7 @@
 <?php
  /* EZ már egy osztály szintű objektum orientált példa. */
 
- $db_kapcsolat = new adatbazis_kapcsolat($database_host,$datebase_user,$datebase_password,$datebase_db);
+ $db_kapcsolat = new adatbazis_kapcsolat($database_host,$database_user,$database_password,$database_db);
  // Ha a felhasználónév és jelszó más lenne, akkor még ez kellene!
  // $db_kapcsolat->_beallit('felhasznalo_nev','felhasznalo_jelszo');
  $db_kapcsolat->_kapcsolodas();
@@ -25,16 +25,16 @@
 
  	/* - Konstruktor - a $this szóval utalunk a saját 
  		 fentebb létrehozott változóra! */
- 	public function __construct($dbh,$dbu,$dbp,$dbdb)
+ 	public function __construct($database_host,$database_user,$database_password,$database_db)
  	{
  		// - Itt beleégettem az adatbázis kapcsolat paramétereit, de a vizsgaremekben
  		//   kívülről elérhetővé kell majd tenni, hogy könnyebb legyen a vizsgaremek
  		//   publikálása külső kiszolgálóra!
 
-		$this->host = $dbh;
-		$this->user = $dbu;
-		$this->password = $dbp;
-		$this->db = $dbdb; // <- A "autokolcsonzo" adatbázishoz kapcsolódunk!
+		$this->host = $database_host;
+		$this->user = $database_user;
+		$this->password = $database_password;
+		$this->db = $database_db; // <- A "autokolcsonzo" adatbázishoz kapcsolódunk!
 
  	}
 

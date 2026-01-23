@@ -1,0 +1,62 @@
+[23-Jan-2026 19:47:25 Europe/Budapest] PHP Warning:  include(php/fuggvenyek.php): Failed to open stream: No such file or directory in C:\xampp\htdocs\GitHub\autoberles\index.php on line 18
+[23-Jan-2026 19:47:25 Europe/Budapest] PHP Warning:  include(): Failed opening 'php/fuggvenyek.php' for inclusion (include_path='C:\xampp\php\PEAR') in C:\xampp\htdocs\GitHub\autoberles\index.php on line 18
+[23-Jan-2026 19:47:25 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'weblap'@'localhost' (using password: YES) in C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php:56
+Stack trace:
+#0 C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php(56): mysqli_connect('localhost', 'weblap', Object(SensitiveParameterValue), 'kolcsonzo')
+#1 C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php(7): adatbazis_kapcsolat->_kapcsolodas()
+#2 C:\xampp\htdocs\GitHub\autoberles\index.php(21): include('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php on line 56
+[23-Jan-2026 19:47:50 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'weblap'@'localhost' (using password: YES) in C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php:56
+Stack trace:
+#0 C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php(56): mysqli_connect('localhost', 'weblap', Object(SensitiveParameterValue), 'kolcsonzo')
+#1 C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php(7): adatbazis_kapcsolat->_kapcsolodas()
+#2 C:\xampp\htdocs\GitHub\autoberles\index.php(21): include('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php on line 56
+[23-Jan-2026 19:50:24 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'weblap'@'localhost' (using password: YES) in C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php:56
+Stack trace:
+#0 C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php(56): mysqli_connect('localhost', 'weblap', Object(SensitiveParameterValue), 'kolcsonzo')
+#1 C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php(7): adatbazis_kapcsolat->_kapcsolodas()
+#2 C:\xampp\htdocs\GitHub\autoberles\index.php(21): include('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php on line 56
+[23-Jan-2026 19:57:49 Europe/Budapest] PHP Warning:  Undefined variable $database_db in C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php on line 4
+[23-Jan-2026 19:57:49 Europe/Budapest] PHP Warning:  Undefined variable $datbase_password in C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php on line 36
+[23-Jan-2026 19:57:49 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'weblap'@'localhost' (using password: NO) in C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php:56
+Stack trace:
+#0 C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php(56): mysqli_connect('localhost', 'weblap', Object(SensitiveParameterValue), NULL)
+#1 C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php(7): adatbazis_kapcsolat->_kapcsolodas()
+#2 C:\xampp\htdocs\GitHub\autoberles\index.php(21): include('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php on line 56
+[23-Jan-2026 19:58:13 Europe/Budapest] PHP Warning:  Undefined variable $datbase_password in C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php on line 36
+[23-Jan-2026 19:58:13 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'weblap'@'localhost' (using password: NO) in C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php:56
+Stack trace:
+#0 C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php(56): mysqli_connect('localhost', 'weblap', Object(SensitiveParameterValue), 'kolcsonzo')
+#1 C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php(7): adatbazis_kapcsolat->_kapcsolodas()
+#2 C:\xampp\htdocs\GitHub\autoberles\index.php(21): include('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php on line 56
+[23-Jan-2026 19:58:53 Europe/Budapest] PHP Warning:  Undefined variable $datbase_password in C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php on line 36
+[23-Jan-2026 19:58:53 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'weblap'@'localhost' (using password: NO) in C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php:56
+Stack trace:
+#0 C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php(56): mysqli_connect('localhost', 'weblap', Object(SensitiveParameterValue), 'kolcsonzo')
+#1 C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php(7): adatbazis_kapcsolat->_kapcsolodas()
+#2 C:\xampp\htdocs\GitHub\autoberles\index.php(21): include('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php on line 56
+[23-Jan-2026 19:59:08 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user 'weblap'@'localhost' (using password: YES) in C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php:56
+Stack trace:
+#0 C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php(56): mysqli_connect('localhost', 'weblap', Object(SensitiveParameterValue), 'kolcsonzo')
+#1 C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php(7): adatbazis_kapcsolat->_kapcsolodas()
+#2 C:\xampp\htdocs\GitHub\autoberles\index.php(21): include('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php on line 56
+[23-Jan-2026 19:59:49 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php:56
+Stack trace:
+#0 C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php(56): mysqli_connect('localhost', '', Object(SensitiveParameterValue), 'kolcsonzo')
+#1 C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php(7): adatbazis_kapcsolat->_kapcsolodas()
+#2 C:\xampp\htdocs\GitHub\autoberles\index.php(21): include('C:\\xampp\\htdocs...')
+#3 {main}
+  thrown in C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php on line 56
