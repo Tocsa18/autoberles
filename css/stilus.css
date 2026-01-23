@@ -1,0 +1,126 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  background: #f4f7fb;
+  color: #1f2937;
+}
+
+/* ===== LAYOUT ===== */
+.vezerlopult {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* ===== SIDEBAR ===== */
+.sidebar {
+  width: 240px;
+  background: linear-gradient(180deg, #2563eb, #1e40af);
+  color: #fff;
+  padding: 1.5rem;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.sidebar h1 {
+  font-size: 1.4rem;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+/* MENU */
+.sidebar ul {
+  list-style: none;
+}
+
+.sidebar li a {
+  display: block;
+  padding: 0.75rem 1rem;
+  color: #e5e7eb;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.2s;
+}
+
+.sidebar li a:hover,
+.sidebar li a.active {
+  background: rgba(255,255,255,0.18);
+  color: #fff;
+}
+
+/* ===== MAIN CONTENT ===== */
+.main {
+  margin-left: 240px;
+  padding: 2rem;
+  width: calc(100% - 240px);
+}
+
+/* ===== TABLE ===== */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.05);
+}
+
+th {
+  text-align: left;
+  padding: 1rem;
+  background: #f9fafb;
+  color: #6b7280;
+  font-size: 0.85rem;
+}
+
+td {
+  padding: 1rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: #2563eb;
+  color: #fff;
+}
+/* Sidebar alapja */
+ul {
+  list-style: none;        /* pontok eltüntetése */
+  margin: 0;
+  padding: 0;
+  width: 200px;            /* sidebar szélessége */
+  background-color: #333;  /* háttérszín */
+  position: fixed;         /* mindig látszik, görgetésnél is */
+  top: 0;
+  left: 0;
+  height: 100%;            /* teljes magasság */
+  display: flex;
+  flex-direction: column;  /* függőleges lista */
+}
+
+/* Linkek stílusa */
+ul li a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 15px 20px;
+  border-bottom: 1px solid #444; /* elválasztó vonal a menüpontok között */
+  transition: background 0.3s;
+}
+
+/* Hover effekt */
+ul li a:hover {
+  background-color: #009578;
+}
