@@ -60,3 +60,67 @@ Stack trace:
 #2 C:\xampp\htdocs\GitHub\autoberles\index.php(21): include('C:\\xampp\\htdocs...')
 #3 {main}
   thrown in C:\xampp\htdocs\GitHub\autoberles\php\adatbaziskapcsolat.php on line 56
+[23-Jan-2026 20:18:15 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\backend\autoberles\php\adatbaziskapcsolat.php:56
+Stack trace:
+#0 D:\xampp\htdocs\backend\autoberles\php\adatbaziskapcsolat.php(56): mysqli_connect('localhost', '', Object(SensitiveParameterValue), 'kolcsonzo')
+#1 D:\xampp\htdocs\backend\autoberles\php\adatbaziskapcsolat.php(7): adatbazis_kapcsolat->_kapcsolodas()
+#2 D:\xampp\htdocs\backend\autoberles\index.php(21): include('D:\\xampp\\htdocs...')
+#3 {main}
+  thrown in D:\xampp\htdocs\backend\autoberles\php\adatbaziskapcsolat.php on line 56
+[23-Jan-2026 20:22:06 Europe/Budapest] PHP Fatal error:  Uncaught mysqli_sql_exception: Access denied for user ''@'localhost' (using password: NO) in D:\xampp\htdocs\backend\autoberles\php\adatbaziskapcsolat.php:56
+Stack trace:
+#0 D:\xampp\htdocs\backend\autoberles\php\adatbaziskapcsolat.php(56): mysqli_connect('localhost', '', Object(SensitiveParameterValue), 'kolcsonzo')
+#1 D:\xampp\htdocs\backend\autoberles\php\adatbaziskapcsolat.php(7): adatbazis_kapcsolat->_kapcsolodas()
+#2 D:\xampp\htdocs\backend\autoberles\index.php(21): include('D:\\xampp\\htdocs...')
+#3 {main}
+  thrown in D:\xampp\htdocs\backend\autoberles\php\adatbaziskapcsolat.php on line 56
+[23-Jan-2026 20:23:53 Europe/Budapest] PHP Warning:  require_once(D:\xampp\htdocs\backend\autoberles/import/phpmailer/src/Exception.php): Failed to open stream: No such file or directory in D:\xampp\htdocs\backend\autoberles\php\levelezes.php on line 9
+[23-Jan-2026 20:23:53 Europe/Budapest] PHP Warning:  Undefined variable $belepve in D:\xampp\htdocs\backend\autoberles\index.php on line 46
+[23-Jan-2026 20:23:53 Europe/Budapest] PHP Warning:  include(html/oldal.html): Failed to open stream: No such file or directory in D:\xampp\htdocs\backend\autoberles\index.php on line 137
+[23-Jan-2026 20:23:53 Europe/Budapest] PHP Warning:  include(): Failed opening 'html/oldal.html' for inclusion (include_path='D:\xampp\php\PEAR') in D:\xampp\htdocs\backend\autoberles\index.php on line 137
+[23-Jan-2026 20:25:06 Europe/Budapest] PHP Warning:  require_once(D:\xampp\htdocs\backend\autoberles/import/phpmailer/src/Exception.php): Failed to open stream: No such file or directory in D:\xampp\htdocs\backend\autoberles\php\levelezes.php on line 9
+[23-Jan-2026 20:25:12 Europe/Budapest] PHP Warning:  require_once(D:\xampp\htdocs\backend\autoberles/import/phpmailer/src/Exception.php): Failed to open stream: No such file or directory in D:\xampp\htdocs\backend\autoberles\php\levelezes.php on line 9
+[23-Jan-2026 20:25:12 Europe/Budapest] PHP Warning:  require_once(D:\xampp\htdocs\backend\autoberles/import/phpmailer/src/Exception.php): Failed to open stream: No such file or directory in D:\xampp\htdocs\backend\autoberles\php\levelezes.php on line 9
+[23-Jan-2026 20:25:13 Europe/Budapest] PHP Warning:  require_once(D:\xampp\htdocs\backend\autoberles/import/phpmailer/src/Exception.php): Failed to open stream: No such file or directory in D:\xampp\htdocs\backend\autoberles\php\levelezes.php on line 9
+[23-Jan-2026 20:25:27 Europe/Budapest] PHP Warning:  require_once(D:\xampp\htdocs\backend\autoberles/import/phpmailer/src/Exception.php): Failed to open stream: No such file or directory in D:\xampp\htdocs\backend\autoberles\php\levelezes.php on line 9
+[23-Jan-2026 21:41:02 Europe/Budapest] PHP Warning:  Undefined variable $menupont in D:\xampp\htdocs\backend\autoberles\index.php on line 47
+[23-Jan-2026 21:41:03 Europe/Budapest] PHP Warning:  Undefined variable $menupont in D:\xampp\htdocs\backend\autoberles\index.php on line 47
+[23-Jan-2026 21:41:31 Europe/Budapest] PHP Warning:  Undefined variable $menupont in D:\xampp\htdocs\backend\autoberles\index.php on line 47
+[23-Jan-2026 21:41:32 Europe/Budapest] PHP Warning:  Undefined variable $menupont in D:\xampp\htdocs\backend\autoberles\index.php on line 47
+[23-Jan-2026 21:41:58 Europe/Budapest] PHP Warning:  Undefined variable $autok in D:\xampp\htdocs\backend\autoberles\html\jarmuvek.html on line 4
+[23-Jan-2026 21:41:58 Europe/Budapest] PHP Fatal error:  Uncaught Error: Call to a member function _autok_lista() on null in D:\xampp\htdocs\backend\autoberles\html\jarmuvek.html:4
+Stack trace:
+#0 D:\xampp\htdocs\backend\autoberles\index.php(46): include()
+#1 {main}
+  thrown in D:\xampp\htdocs\backend\autoberles\html\jarmuvek.html on line 4
+[23-Jan-2026 21:41:59 Europe/Budapest] PHP Warning:  Undefined variable $autok in D:\xampp\htdocs\backend\autoberles\html\jarmuvek.html on line 4
+[23-Jan-2026 21:41:59 Europe/Budapest] PHP Fatal error:  Uncaught Error: Call to a member function _autok_lista() on null in D:\xampp\htdocs\backend\autoberles\html\jarmuvek.html:4
+Stack trace:
+#0 D:\xampp\htdocs\backend\autoberles\index.php(46): include()
+#1 {main}
+  thrown in D:\xampp\htdocs\backend\autoberles\html\jarmuvek.html on line 4
+[23-Jan-2026 21:42:16 Europe/Budapest] PHP Parse error:  syntax error, unexpected token ";", expecting "function" or "const" in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 91
+[23-Jan-2026 21:42:16 Europe/Budapest] PHP Parse error:  syntax error, unexpected token ";", expecting "function" or "const" in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 91
+[23-Jan-2026 21:42:19 Europe/Budapest] PHP Parse error:  syntax error, unexpected token ";", expecting "function" or "const" in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 91
+[23-Jan-2026 21:42:20 Europe/Budapest] PHP Parse error:  syntax error, unexpected token ";", expecting "function" or "const" in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 91
+[23-Jan-2026 21:42:37 Europe/Budapest] PHP Warning:  Undefined variable $autok in D:\xampp\htdocs\backend\autoberles\html\jarmuvek.html on line 4
+[23-Jan-2026 21:42:37 Europe/Budapest] PHP Fatal error:  Uncaught Error: Call to a member function _autok_lista() on null in D:\xampp\htdocs\backend\autoberles\html\jarmuvek.html:4
+Stack trace:
+#0 D:\xampp\htdocs\backend\autoberles\index.php(46): include()
+#1 {main}
+  thrown in D:\xampp\htdocs\backend\autoberles\html\jarmuvek.html on line 4
+[23-Jan-2026 21:42:56 Europe/Budapest] PHP Parse error:  syntax error, unexpected token ";", expecting "function" or "const" in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 91
+[23-Jan-2026 21:43:39 Europe/Budapest] PHP Warning:  Undefined variable $menupont in D:\xampp\htdocs\backend\autoberles\index.php on line 47
+[23-Jan-2026 21:43:40 Europe/Budapest] PHP Warning:  Undefined variable $menupont in D:\xampp\htdocs\backend\autoberles\index.php on line 47
+[23-Jan-2026 21:43:41 Europe/Budapest] PHP Warning:  Undefined variable $menupont in D:\xampp\htdocs\backend\autoberles\index.php on line 47
+[23-Jan-2026 21:43:41 Europe/Budapest] PHP Warning:  Undefined variable $menupont in D:\xampp\htdocs\backend\autoberles\index.php on line 47
+[23-Jan-2026 21:44:27 Europe/Budapest] PHP Warning:  Undefined variable $menupont in D:\xampp\htdocs\backend\autoberles\index.php on line 47
+[24-Jan-2026 19:33:40 Europe/Budapest] PHP Warning:  Undefined array key "ev" in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 77
+[24-Jan-2026 19:49:49 Europe/Budapest] PHP Warning:  Undefined property: autok::$evjarat in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 20
+[24-Jan-2026 19:50:54 Europe/Budapest] PHP Warning:  Undefined property: autok::$evjarat in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 20
+[24-Jan-2026 19:51:04 Europe/Budapest] PHP Warning:  Undefined property: autok::$evjarat in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 20
+[24-Jan-2026 20:02:36 Europe/Budapest] PHP Warning:  Undefined variable $autok in D:\xampp\htdocs\backend\autoberles\index.php on line 53
+[24-Jan-2026 20:02:36 Europe/Budapest] PHP Fatal error:  Uncaught Error: Call to a member function ment() on null in D:\xampp\htdocs\backend\autoberles\index.php:53
+Stack trace:
+#0 {main}
+  thrown in D:\xampp\htdocs\backend\autoberles\index.php on line 53
