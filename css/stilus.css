@@ -37,6 +37,8 @@ body {
 /* MENU */
 .sidebar ul {
   list-style: none;
+  margin: 0;
+  padding: 0;;
 }
 
 .sidebar li a {
@@ -64,6 +66,7 @@ body {
 /* ===== TABLE ===== */
 table {
   width: 100%;
+  table-layout: auto;
   border-collapse: collapse;
   background: #fff;
   border-radius: 12px;

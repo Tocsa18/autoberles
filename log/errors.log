@@ -115,3 +115,9 @@ Stack trace:
 [23-Jan-2026 21:43:41 Europe/Budapest] PHP Warning:  Undefined variable $menupont in D:\xampp\htdocs\backend\autoberles\index.php on line 47
 [23-Jan-2026 21:43:41 Europe/Budapest] PHP Warning:  Undefined variable $menupont in D:\xampp\htdocs\backend\autoberles\index.php on line 47
 [23-Jan-2026 21:44:27 Europe/Budapest] PHP Warning:  Undefined variable $menupont in D:\xampp\htdocs\backend\autoberles\index.php on line 47
+[24-Jan-2026 19:52:40 Europe/Budapest] PHP Warning:  Undefined variable $autok in C:\xampp\htdocs\GitHub\autoberles\html\jarmuvek.html on line 3
+[24-Jan-2026 19:52:40 Europe/Budapest] PHP Fatal error:  Uncaught Error: Call to a member function _autok_lista() on null in C:\xampp\htdocs\GitHub\autoberles\html\jarmuvek.html:3
+Stack trace:
+#0 C:\xampp\htdocs\GitHub\autoberles\index.php(49): include()
+#1 {main}
+  thrown in C:\xampp\htdocs\GitHub\autoberles\html\jarmuvek.html on line 3
