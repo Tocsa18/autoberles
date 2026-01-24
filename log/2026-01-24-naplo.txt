@@ -74,3 +74,16 @@
 2026-01-24 - 06:26:32am - autok osztály megsemmisült.
 2026-01-24 - 06:26:32am - Böngészőben betöltődött az oldal.
 2026-01-24 - 06:26:32am - Az oldal újratöltődött.
+2026-01-24 - 07:41:29pm - Böngészőben betöltődött az oldal.
+2026-01-24 - 07:41:29pm - Az oldal újratöltődött.
+2026-01-24 - 07:41:32pm - Böngészőben betöltődött az oldal.
+2026-01-24 - 07:41:32pm - Az oldal újratöltődött.
+2026-01-24 - 07:41:34pm - Böngészőben betöltődött az oldal.
+2026-01-24 - 07:41:34pm - Az oldal újratöltődött.
+2026-01-24 - 07:41:35pm - Böngészőben betöltődött az oldal.
+2026-01-24 - 07:41:35pm - Az oldal újratöltődött.
+2026-01-24 - 07:41:36pm - autok osztály létrejött.
+2026-01-24 - 07:41:36pm - SELECT * FROM autok
+2026-01-24 - 07:41:36pm - autok osztály megsemmisült.
+2026-01-24 - 07:41:37pm - Böngészőben betöltődött az oldal.
+2026-01-24 - 07:41:37pm - Az oldal újratöltődött.
