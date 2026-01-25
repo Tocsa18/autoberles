@@ -1,3 +1,4 @@
+
 2026-01-24 - 06:25:20am - Böngészőben betöltődött az oldal.
 2026-01-24 - 06:25:20am - Az oldal újratöltődött.
 2026-01-24 - 06:25:27am - Böngészőben betöltődött az oldal.
@@ -898,4 +899,5 @@
 2026-01-24 - 08:32:20pm - Az oldal újratöltődött.
 2026-01-24 - 08:32:20pm - autok osztály létrejött.
 2026-01-24 - 08:32:20pm - SELECT * FROM autok
+2026-01-24 - 08:32:20pm - autok osztály megsemmisült.
 2026-01-24 - 08:32:20pm - autok osztály megsemmisült.

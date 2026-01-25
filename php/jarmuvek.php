@@ -30,6 +30,12 @@ $autok = new autok($db_kapcsolat,$naplo);
     						 	}
     							else {include('html/jarmuvek.html');} 
     						break;
+    							break;
+    		case 'torol'	:   if (isset($_GET['auto_id']))
+    						 	{include('html/torlesmegerosites.html');
+    						 	$autok->torles($_GET['auto_id']);}
+    							else {include('html/jarmuvek.html');}
+								break;
 			default : 			break;
 			}
 		}
@@ -266,5 +272,22 @@ class autok {
 		 // Eláruljuk a hívónak, hogy sikeres volt-e a mentés!
 		 return $sikeresmentes;
 	}
+	public function torles($auto_id) 
+	{
+		// - Beállítom a müveletet, azért, mert a termek.html FORM elemének
+		//   az action url-jét ez alapján fogom változtatani 
+		$this->muvelet = 'delete';
+		$this->auto_id = $auto_id;
+
+		$SQLlekerdezes = "DELETE FROM autok WHERE auto_id = $auto_id";
+
+		// Lefuttatjuk az SQL lekérdezést!
+		$SQLeredmeny = mysqli_query($this->db_kapcsolat->_kapcsolat(),$SQLlekerdezes);
+
+		if(isset($sqlhiba))
+		{
+			$this->naplo->_bejegyez($sqlhiba);
+		}
+  }
 }
 ?>

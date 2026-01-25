@@ -2,14 +2,14 @@
 
  $belepve = false;
 
- $belepes = new belep($naplo,$db_kapcsolat,$munkamenettarolo);
+ $belepes = new belep();
 
  if (isset($_POST['usr']) && isset($_POST['psw']))
  	{
  		try {
    			 $belepve = $belepes->_belepes($_POST['usr'],MD5($_POST['psw']));
    			} catch (\Error $internalError) { /* Az $internalError objektumból kiolvasom a hibaüzenetet */
-            		                         $naplo->_bejegyez($internalError->getMessage()); 
+            		                         $hibanaplo->_bejegyez($internalError->getMessage()); 
                     		                }
     }
     else
@@ -17,20 +17,11 @@
     	$belepve = $belepes->_belepve();
     } 
 
-  if (isset($_GET['logout']))
-    {
-      include('html/kilepes.html');
-    }    
-
-    if (isset($_POST['exit']))
+    if (isset($_POST['logout']))
     {
     	$belepve = $belepes->_kilepes();
     }
 class belep {
-  // Működéshez szükséges alapvető objektumok
-  private $naplo;
-  private $db_kapcsolat;
-  private $munkamenettarolo;
 
  	// - Az SQL parancsokat is mindig egy központi változóban tárolom,
  	//   a megoldás nem célszerű, viszont kiküszöböli az SQL parancsok összekeveresését,
@@ -42,12 +33,9 @@ class belep {
 
  	/* - Konstruktor - a $this szóval utalunk a saját 
  		 fentebb létrehozott változóra! */
- 	public function __construct($naplo,$db_kapcsolat,$munkamenet)
+ 	public function __construct()
  	{
- 		$this->naplo = $naplo;
-    $this->db_kapcsolat = $db_kapcsolat;
-    $this->munkamenettarolo = $munkamenet;
-    // - Ha nagyon biztosra akarok menni, akkor ide teszek
+ 		// - Ha nagyon biztosra akarok menni, akkor ide teszek
  		//   egy nagyon felesleges lépést :)
  		$this->sqlCommand = "";
 
@@ -56,8 +44,8 @@ class belep {
  		$this->sikeresbelepes = false;
 
  		// - Vissza próbálom olvasni a munkamenet tároló adatait
-
- 		if ($this->munkamenettarolo->parameter_olvas('belepve','false') == 'true')
+ 		global $munkamenettarolo;
+ 		if ($munkamenettarolo->parameter_olvas('belepve','false') == 'true')
  			{$this->sikeresbelepes = true;}
  	}
 
@@ -84,21 +72,19 @@ class belep {
    		// - Mivel SELECT COUNT a parancs, ha nincs a feltételnek megfelelő
    		//   sor az adatbázisban, akkor is lesz egy visszatérési sor -> tatlalat 0 lesz!   
    		$this->sqlCommand = "SELECT COUNT(id) as talalat 
-   							            FROM   user
-   							            WHERE  loginname = '$loginname' 
-   							 		       AND
-   			                    password = '$password' 
-                            AND
-                            state=1
-                            AND 
-                            deleted=0";
+   							 FROM   user
+   							 WHERE  loginname = '$loginname' 
+   							 		AND
+   							 		password = '$password' ";
 
-  		// - A mysqli_query függvény által összeszedett eredmény halmazt (adatbázis sorai)
+   		// Végrehajtom a lekérdezést úgy, hogy a connection segítségével elküldöm a szervernek!
+   		global $db_kapcsolat;
+   		// - A mysqli_query függvény által összeszedett eredmény halmazt (adatbázis sorai)
    		//   az $SQLResult változóba tesszük! 
-   		$SQLResult = mysqli_query($this->db_kapcsolat->_kapcsolat(),$this->sqlCommand);
+   		$SQLResult = mysqli_query($db_kapcsolat->_kapcsolat(),$this->sqlCommand);
 
    		// A futtatás után megkérdezzük, hogy van-e hibánk?
-		$sqlerror = mysqli_error($this->db_kapcsolat->_kapcsolat());
+		$sqlerror = mysqli_error($db_kapcsolat->_kapcsolat());
 
 		if (empty($sqlerror))
 		    {
@@ -124,7 +110,7 @@ class belep {
 			       azonnal elvesszük! Így a támmadó hiba kikényszerítésével
 			       nem tud illetéktelenül belépni! */
 			  $this->sikeresbelepes = false;
-			  $this->naplo->_bejegyez($sqlerror);}
+			  $hibanaplo->_bejegyez($sqlerror);}
       
       // - A függvény visszatérési értéke!
 	  return $this->sikeresbelepes;
@@ -132,7 +118,8 @@ class belep {
 
      /* Osztály interfész */
      public function _belepes($loginname, $password) {
-
+         /* Használni fogom a hibanaplót */
+         global $hibanaplo;
          try { 
          		// - Meg kell kérdezni a munkamenet kezeléséért 
          		//   felelős objektumot, hogy mi a manó van? 
@@ -148,11 +135,11 @@ class belep {
          			  $this->sikeresbelepes = $this->_belep($loginname, $password);
          			  // - A belépési kísérlet eredméyne alapján frissítem a 
          			  //   munkamenetet kezelő objektumot!
-
+         			  global $munkamenettarolo;
          			  if ($this->sikeresbelepes == true)
-         			    {$this->munkamenettarolo->parameter_ir('belepve','true');}
+         			    {$munkamenettarolo->parameter_ir('belepve','true');}
          			  else 
-         			  	{$this->munkamenettarolo->parameter_ir('belepve','false');}
+         			  	{$munkamenettarolo->parameter_ir('belepve','false');}
          			  // - Visszadaom a függvény hívójának a belépési kísérlet
          			  //   eredményét!	
          			  return $this->sikeresbelepes;}
@@ -160,7 +147,7 @@ class belep {
              								  $hibauzenet = basename($internalError->getFile()).', '.
                                                             $internalError->getLine().'. sor, '.
                                                             $internalError->getMessage();
-                                              $this->naplo->_bejegyez($hibauzenet);
+                                              $hibanaplo->_bejegyez($hibauzenet);
                                           	  return $this->sikeresbelepes;}
       }
 
@@ -170,7 +157,8 @@ class belep {
       public function _kilepes()
       {
    		$this->sikeresbelepes = false;   
-   		$this->munkamenettarolo->parameter_ir('belepve','false');
+   		global $munkamenettarolo;
+   		$munkamenettarolo->parameter_ir('belepve','false');
       	return $this->sikeresbelepes;
       }
 }

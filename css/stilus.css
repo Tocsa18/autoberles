@@ -37,9 +37,6 @@ body {
 /* MENU */
 .sidebar ul {
   list-style: none;
-  margin: 0;
-  padding: 0;;
-}
 
 .sidebar li a {
   display: block;
@@ -190,3 +187,7 @@ ul li a.active {
     border-color: #f9c4c4;
     background-color: #fff1f1;
   }
+.logout
+{
+  text-align: right;
+}
