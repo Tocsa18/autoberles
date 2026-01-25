@@ -7,7 +7,7 @@ $baseURL = "http://127.0.0.1/backend/autoberles";
 $database_host = 'localhost';
 $database_user = 'root';
 $database_password = '';
-$database_db = 'kolcsonzo';
+$database_db = 'autokolcsonzo';
 
 // LOG
 $log_enabled = true;

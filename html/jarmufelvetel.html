@@ -1,0 +1,45 @@
+<?php if ($autok->muvelet == 'insert')
+  		{$autok_muvelet = 'index.php?menupont=jarmuvek&jarmu=ment';} 
+  	  else	
+  		{$autok_muvelet = 'index.php?menupont=jarmuvek&jarmu=modosit&auto_id='.$autok->auto_id;} 
+  ?>
+
+<form action="<?php echo($autok_muvelet); ?>" method="POST">
+  <label>Márka:</label><br>
+  <input class="input kotelezo" id="marka" type="text" name="marka"
+         value="<?php echo($autok->marka) ?>"
+         oninput="input_kotelezo('marka')"><br>
+
+  <label>Modell:</label><br>
+  <input class="input kotelezo" id="modell" type="text" name="modell"
+         value="<?php echo($autok->modell) ?>"
+         oninput="input_kotelezo('modell')"><br>
+
+  <label>Évjárat:</label><br>
+  <input class="input kotelezo" id="evjarat" type="text" name="evjarat"
+         value="<?php echo($autok->evjarat) ?>"
+         oninput="input_kotelezo('evjarat')"><br>
+
+  <label>Alvázszám:</label><br>
+  <input class="input kotelezo" id="alvazszam" type="text" name="alvazszam"
+         value="<?php echo($autok->alvazszam) ?>"
+         oninput="input_kotelezo('alvazszam')"><br>
+
+  <label>Rendszám:</label><br>
+  <input class="input kotelezo" id="rendszam" type="text" name="rendszam"
+         value="<?php echo($autok->rendszam) ?>"
+         oninput="input_kotelezo('rendszam')"><br>
+
+  <label>Napi díj:</label><br>
+  <input class="input kotelezo" id="napi_dij" type="text" name="napi_dij"
+         value="<?php echo($autok->napi_dij) ?>"
+         oninput="input_kotelezo('napi_dij')"><br>
+
+  <input type="submit" value="Ment">
+</form>
+
+
+<form action="index.php?menupont=jarmuvek" method="POST">
+	<input type="submit" name="" value="Mégsem">
+</form>
+<div id="uzenet"><?php echo($autok->uzenet); ?></div>

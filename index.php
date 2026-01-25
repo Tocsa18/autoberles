@@ -39,6 +39,10 @@
 	<!--<script type="text/javascript" src="js/import/ckeditor/ckeditor.js"></script>
 	<script type="text/javascript" src="js/import/jquery/jQuery_3_7_1.js"></script>
 	<script type="text/javascript" src="js/sajat.js"></script>-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+	<!--<script type="text/javascript" src="js/import/ckeditor/ckeditor.js"></script>
+	<script type="text/javascript" src="js/import/jquery/jQuery_3_7_1.js"></script>-->
+	<script type="text/javascript" src="js/mezo_check.js"></script>
 </head>
 <body>
 	<?php 
@@ -51,6 +55,9 @@
 			 					break;
 			default : 			break;
 			}
+		if(isset($_GET['menupont']) && $_GET['menupont'] == 'jarmuvek')
+		{
+			include('php/jarmuvek.php');
 		}
 	?>
 </body>

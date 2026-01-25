@@ -127,3 +127,66 @@ ul li a {
 ul li a:hover {
   background-color: #009578;
 }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 2rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 64px;
+
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+
+  background: linear-gradient(90deg, #2563eb, #1e40af);
+  z-index: 1000;
+}
+
+ul li {
+  margin: 0;
+}
+
+ul li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  color: #e5e7eb;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: background 0.2s, color 0.2s;
+  font-weight: 500;
+}
+ul li a:hover,
+ul li a.active {
+  background: rgba(255,255,255,0.18);
+  color: #fff;
+}
+.main {
+  padding-top: 32px;
+}
+.ujjarmu
+{
+  padding: 10px;
+  text-decoration: none;
+  font-size: 20px;
+}
+.kotelezo {
+  border-color: #f9c4c4;
+  background-color: #fff1f1;
+}
+ .input {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    font-size: 18px;
+    border-style: solid;
+    border-radius: 8px;
+  }
+
+  .input.kotelezo {
+    border-color: #f9c4c4;
+    background-color: #fff1f1;
+  }

@@ -121,3 +121,12 @@ Stack trace:
 #0 C:\xampp\htdocs\GitHub\autoberles\index.php(49): include()
 #1 {main}
   thrown in C:\xampp\htdocs\GitHub\autoberles\html\jarmuvek.html on line 3
+[24-Jan-2026 19:33:40 Europe/Budapest] PHP Warning:  Undefined array key "ev" in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 77
+[24-Jan-2026 19:49:49 Europe/Budapest] PHP Warning:  Undefined property: autok::$evjarat in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 20
+[24-Jan-2026 19:50:54 Europe/Budapest] PHP Warning:  Undefined property: autok::$evjarat in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 20
+[24-Jan-2026 19:51:04 Europe/Budapest] PHP Warning:  Undefined property: autok::$evjarat in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 20
+[24-Jan-2026 20:02:36 Europe/Budapest] PHP Warning:  Undefined variable $autok in D:\xampp\htdocs\backend\autoberles\index.php on line 53
+[24-Jan-2026 20:02:36 Europe/Budapest] PHP Fatal error:  Uncaught Error: Call to a member function ment() on null in D:\xampp\htdocs\backend\autoberles\index.php:53
+Stack trace:
+#0 {main}
+  thrown in D:\xampp\htdocs\backend\autoberles\index.php on line 53
