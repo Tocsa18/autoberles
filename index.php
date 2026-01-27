@@ -58,12 +58,12 @@
 			 					break;
 			default : 			break;
 			}
+		}
 		if(isset($_GET['menupont']) && $_GET['menupont'] == 'jarmuvek')
 		{
 			include('php/jarmuvek.php');
 		}
 
-	<?php
 	if ($belepve == true )
 	{if (isset($_GET['menupont']) && $_GET['menupont'] == 'logout')
 		 {include('html/kilepes.html');
