@@ -121,3 +121,39 @@ Stack trace:
 #0 C:\xampp\htdocs\GitHub\autoberles\index.php(49): include()
 #1 {main}
   thrown in C:\xampp\htdocs\GitHub\autoberles\html\jarmuvek.html on line 3
+[24-Jan-2026 19:33:40 Europe/Budapest] PHP Warning:  Undefined array key "ev" in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 77
+[24-Jan-2026 19:49:49 Europe/Budapest] PHP Warning:  Undefined property: autok::$evjarat in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 20
+[24-Jan-2026 19:50:54 Europe/Budapest] PHP Warning:  Undefined property: autok::$evjarat in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 20
+[24-Jan-2026 19:51:04 Europe/Budapest] PHP Warning:  Undefined property: autok::$evjarat in D:\xampp\htdocs\backend\autoberles\html\jarmufelvetel.html on line 20
+[24-Jan-2026 20:02:36 Europe/Budapest] PHP Warning:  Undefined variable $autok in D:\xampp\htdocs\backend\autoberles\index.php on line 53
+[24-Jan-2026 20:02:36 Europe/Budapest] PHP Fatal error:  Uncaught Error: Call to a member function ment() on null in D:\xampp\htdocs\backend\autoberles\index.php:53
+Stack trace:
+#0 {main}
+  thrown in D:\xampp\htdocs\backend\autoberles\index.php on line 53
+  thrown in D:\xampp\htdocs\backend\autoberles\index.php on line 53
+[25-Jan-2026 18:15:38 Europe/Budapest] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function autok::torles(), 0 passed in D:\xampp\htdocs\backend\autoberles\html\torlesmegerosites.html on line 1 and exactly 1 expected in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php:272
+Stack trace:
+#0 D:\xampp\htdocs\backend\autoberles\html\torlesmegerosites.html(1): autok->torles()
+#1 D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php(33): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\backend\autoberles\index.php(49): include('D:\\xampp\\htdocs...')
+#3 {main}
+  thrown in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 272
+[25-Jan-2026 18:16:01 Europe/Budapest] PHP Fatal error:  Uncaught ArgumentCountError: Too few arguments to function autok::torles(), 0 passed in D:\xampp\htdocs\backend\autoberles\html\torlesmegerosites.html on line 1 and exactly 1 expected in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php:272
+Stack trace:
+#0 D:\xampp\htdocs\backend\autoberles\html\torlesmegerosites.html(1): autok->torles()
+#1 D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php(33): include('D:\\xampp\\htdocs...')
+#2 D:\xampp\htdocs\backend\autoberles\index.php(49): include('D:\\xampp\\htdocs...')
+#3 {main}
+  thrown in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 272
+[25-Jan-2026 18:16:55 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "else", expecting "case" or "default" or "}" in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 34
+[25-Jan-2026 18:42:58 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "else" in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 36
+[25-Jan-2026 18:43:07 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "default" in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 37
+[25-Jan-2026 18:43:08 Europe/Budapest] PHP Parse error:  syntax error, unexpected token "default" in D:\xampp\htdocs\backend\autoberles\php\jarmuvek.php on line 37
+[25-Jan-2026 19:12:44 Europe/Budapest] PHP Warning:  Undefined array key "logout" in D:\xampp\htdocs\backend\autoberles\index.php on line 49
+[25-Jan-2026 19:12:57 Europe/Budapest] PHP Warning:  Undefined array key "logout" in D:\xampp\htdocs\backend\autoberles\index.php on line 49
+[25-Jan-2026 19:12:58 Europe/Budapest] PHP Warning:  Undefined array key "logout" in D:\xampp\htdocs\backend\autoberles\index.php on line 49
+[25-Jan-2026 19:13:01 Europe/Budapest] PHP Warning:  Undefined array key "logout" in D:\xampp\htdocs\backend\autoberles\index.php on line 49
+[25-Jan-2026 19:13:01 Europe/Budapest] PHP Warning:  Undefined array key "logout" in D:\xampp\htdocs\backend\autoberles\index.php on line 49
+[25-Jan-2026 19:13:02 Europe/Budapest] PHP Warning:  Undefined array key "logout" in D:\xampp\htdocs\backend\autoberles\index.php on line 49
+[25-Jan-2026 19:13:09 Europe/Budapest] PHP Warning:  Undefined array key "logout" in D:\xampp\htdocs\backend\autoberles\index.php on line 49
+[25-Jan-2026 19:13:10 Europe/Budapest] PHP Warning:  Undefined array key "logout" in D:\xampp\htdocs\backend\autoberles\index.php on line 49
