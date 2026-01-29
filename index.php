@@ -49,7 +49,7 @@
 <body>
 
 	<?php 
-		include('html/vezerlopult.html');
+		//include('html/vezerlopult.html');
 		if (isset($_GET['menupont']))
 		{
 		switch ($_GET['menupont']) {
